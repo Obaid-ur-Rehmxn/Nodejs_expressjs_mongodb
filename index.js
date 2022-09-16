@@ -7,7 +7,7 @@ app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname+'/index.html'));
 });
 
-
+mongoose.models={};
 const NewModel = mongoose.model('feedback', {name: String, email: String, message: String});
 
 
